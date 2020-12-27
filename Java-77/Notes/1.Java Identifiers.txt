@@ -1,0 +1,47 @@
+Points about a Java Program:
+----------------------------
+
+1) Case Sensitivity - A Java program is case sensitive which means identifier "name" and "Name" are two.
+
+2) Naming Convension for Class Names - the first letter of each word in the class name should be capital letter. 
+
+Example:
+    class MyFirstJavaClass{    }
+
+    class PersonalDetails{     }
+
+3) Naming convension for Method Names and Variable Names
+- all method names and variable names should start with a lower case letter and there after each inner word's first letter should be capital letter.
+
+Example:
+ public void myMethodName() { }
+ public void depositAmount() {}
+
+ String firstName;
+==========================================================
+
+Java Identifiers:
+-----------------
+- names used in a Java Program is known as identifier.
+- names used for classes, variables,  methods etc are called identifiers.
+
+Identifier Rules
+----------------
+1) An identifier can have alpha-numeric characters (A-Z, a-z, 0-9), underscore (_)  and $ symbol
+
+2) An identifier should begin with a letter (A-Z or a-z), currency character ($) or an underscore (_); not with a number
+
+3) A key word of java should not be used as an identifier.
+
+4) Identifiers are case sensitive.         
+
+5) No space is allowed between the characters of an identifier
+
+Examples:
+firstName
+last_name
+_age
+$sal
+_$_
+SavingsAccount
+depositAmount()
