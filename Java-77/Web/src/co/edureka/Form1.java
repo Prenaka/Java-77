@@ -9,24 +9,24 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/admin")
-public class AdminServlet extends HttpServlet {
+@WebServlet("/Form1")
+public class Form1 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {		
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		
-		out.println("<html>");
-		out.println("<body style=text-align:center;background-color:aquamarine>");
-		out.println("<h2>edureka limited</h2>");
-		out.println("<img src=images/edureka2.jpg>");		
-		out.println("<hr>");
-		out.println("<p style=text-align:left>Hello, "+ request.getParameter("txtUid")+"</p>");
-		out.println("<hr>");
-		out.println("</body></html>");
+		out.println("<body bgcolor=cyan>");
+		out.println("<form action=Form2 method=get>");
+		out.println("<h2>");
+		out.println("Name <input type=text name=t1 size=25><br><br>");
+		out.println("Age <input type=text name=t2 size=25><br><br>");
+		out.println("Address <input type=text name=t3 size=25><br><br>");
+		out.println("<input type=submit value=SUBMIT>");
+		out.println("</form></body>");
 	}
-
+	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
 	}
