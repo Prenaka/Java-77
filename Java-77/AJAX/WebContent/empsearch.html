@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="css/styles.css"/>
+<title>Employee Search</title>
+</head>
+<body> 
+  <table>
+   <tr>
+    <td>
+     <label>Emp No</label>
+    </td>
+    <td>
+     <input type=text name="empno" id="empno" size=20 autofocus onblur="searchEmployee(this.value)">
+    </td>
+   </tr>
+
+   <tr>
+    <td>
+     <label>Name</label>
+    </td>
+    <td>
+     <span id="empname">________________</span>
+    </td>
+   </tr>   
+
+   <tr>
+    <td>
+     <label>Salary</label>
+    </td>
+    <td>
+     <span id="salary">________________</span>
+    </td>
+   </tr>      
+  </table>
+ <!--  including external java script file -->
+ <script src="js/script.js"></script>
+</body>
+</html>

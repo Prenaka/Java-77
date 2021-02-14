@@ -1,8 +1,0 @@
-package co.edureka;
-
-import java.util.List;
-
-public class Databases {
- private List<String> dbNames;
- 
-}
